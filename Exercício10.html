@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 10</title>
+    <script src="exercicio10.js" defer></script>
+</head>
+<body>
+    <h1>Calculadora de Preço de Camisetas</h1>
+    <form id="formCamisetas">
+        <label for="quantidadePequenas">Quantidade de Camisetas Pequenas:</label>
+        <input type="number" id="quantidadePequenas" min="0" required><br>
+
+        <label for="quantidadeMedias">Quantidade de Camisetas Médias:</label>
+        <input type="number" id="quantidadeMedias" min="0" required><br>
+
+        <label for="quantidadeGrandes">Quantidade de Camisetas Grandes:</label>
+        <input type="number" id="quantidadeGrandes" min="0" required><br>
+
+        <button type="button" onclick="calcularPreco()">Calcular Preço</button>
+    </form>
+    <p id="resultado"></p>
+</body>
+</html>
